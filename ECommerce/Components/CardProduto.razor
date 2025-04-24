@@ -1,0 +1,14 @@
+<div class="p-4 border rounded-xl shadow hover:shadow-lg transition">
+    <a href="@Link">
+        <img src="@ImagemUrl" alt="@Nome" class="rounded-xl mb-2" />
+        <p class="font-medium">@Nome</p>
+        <p class="text-sm text-gray-600">@Preco</p>
+    </a>
+</div>
+
+@code {
+    [Parameter] public string ImagemUrl { get; set; }
+    [Parameter] public string Nome { get; set; }
+    [Parameter] public string Preco { get; set; }
+    [Parameter] public string Link { get; set; }
+}
