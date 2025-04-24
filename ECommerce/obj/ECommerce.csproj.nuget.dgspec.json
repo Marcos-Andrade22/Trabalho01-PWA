@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\Ecommerce\\ECommerce.csproj": {}
+    "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\Ecommerce\\ECommerce.csproj": {
+    "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\Ecommerce\\ECommerce.csproj",
+        "projectUniqueName": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj",
         "projectName": "ECommerce",
-        "projectPath": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\Ecommerce\\ECommerce.csproj",
+        "projectPath": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj",
         "packagesPath": "C:\\Users\\mvpde\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\Ecommerce\\obj\\",
+        "outputPath": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mvpde\\AppData\\Roaming\\NuGet\\NuGet.Config"

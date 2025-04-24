@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "17Abf8wCDaA=",
+  "dgSpecHash": "tyYgs1lk3qU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\Ecommerce\\ECommerce.csproj",
+  "projectFilePath": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mvpde\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.3\\microsoft.aspnetcore.authorization.9.0.3.nupkg.sha512",
     "C:\\Users\\mvpde\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.3\\microsoft.aspnetcore.components.9.0.3.nupkg.sha512",
