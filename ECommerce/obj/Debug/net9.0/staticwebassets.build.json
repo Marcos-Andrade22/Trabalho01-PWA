@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WclhjI5FeBZxSeVM6Wa5YKNwcZRs0EIjNfjYiQI+hXI=",
+  "Hash": "vt9MCaXZSssiJ52AknchdyhX3rfw4xJujpvVqHLzmH0=",
   "Source": "ECommerce",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "7l1f9p3zkc",
-      "Integrity": "Na2ABi8AOHzlE3QN5UHO2b0Xhv8aGyMHDHE5ObxplBg=",
+      "Fingerprint": "d08xygl8jl",
+      "Integrity": "M2eBFXruYjz5jKpkgeGCW6TZVbN/w+DHd0+DyQF1M8k=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "kal9x3bl9x",
-      "Integrity": "DHEizBQSJV1QJ0tpMvhX/+BorlE8KFoPnhvfkVs4Y5U=",
+      "Fingerprint": "nan8dz75pk",
+      "Integrity": "EY8eqgVxGtnWlwW/k4Y1p5ACuF/DMA+MjUv6h7cwYCA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\ECommerce.pdb"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "4x9bdaytyy",
-      "Integrity": "+PsGusFgkm0gkQ6Ao2rbtawKFlfee0Ngfo4esQwChtU=",
+      "Fingerprint": "yw9zeea4za",
+      "Integrity": "Dn1g7eG0V4L9qgfgWb5TTtICW4ahC1V30fmT/+NuA5A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\webcil\\ECommerce.wasm"
@@ -4490,7 +4490,7 @@
       "OriginalItemSpec": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\1nzj7h4phi-7l1f9p3zkc.gz",
+      "Identity": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\1nzj7h4phi-d08xygl8jl.gz",
       "SourceId": "ECommerce",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\",
@@ -4504,8 +4504,8 @@
       "RelatedAsset": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lwvd8oizfl",
-      "Integrity": "xSpbuKnkQ5ZsPu67fZ27U5M6T2szRHHaQpaLZKO3zl4=",
+      "Fingerprint": "0l53ln5gix",
+      "Integrity": "BICmoSESlmVzkESKO6iYxj5r02UnTxAg8ZHt+M6cI4M=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -5204,12 +5204,12 @@
       "OriginalItemSpec": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-b4tlqf02gm.gz",
+      "Identity": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-rwu7uu44ne.gz",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "css/output#[.{fingerprint=b4tlqf02gm}]?.css.gz",
+      "RelativePath": "css/output#[.{fingerprint=rwu7uu44ne}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5218,8 +5218,8 @@
       "RelatedAsset": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\wwwroot\\css\\output.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "kcx06f4qc0",
-      "Integrity": "1MoUkcDuNjNwVScjcJcMUPOy0x6Rx4xngRb+lVLgvCk=",
+      "Fingerprint": "3jw2lw1a0t",
+      "Integrity": "0aktYUgdZ2qkw9pmlyenPNmqUb2bZp+qyvxIZBrFB3A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\wwwroot\\css\\output.css"
@@ -5645,12 +5645,12 @@
       "OriginalItemSpec": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.IO.UnmanagedMemoryStream.wasm"
     },
     {
-      "Identity": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-kal9x3bl9x.gz",
+      "Identity": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-nan8dz75pk.gz",
       "SourceId": "ECommerce",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ECommerce#[.{fingerprint=kal9x3bl9x}]!.pdb.gz",
+      "RelativePath": "_framework/ECommerce#[.{fingerprint=nan8dz75pk}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5659,8 +5659,8 @@
       "RelatedAsset": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerce.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "av924ojs9c",
-      "Integrity": "ik2ChPb0VK2lfmRUOFFofWBBqW6Jc210WdT4ZxfD+dA=",
+      "Fingerprint": "pchwtbicol",
+      "Integrity": "2YgJ91l5YJcVg+fOgLCBeSvZE0WAMchji2FQBtHem8Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerce.pdb"
@@ -6737,12 +6737,12 @@
       "OriginalItemSpec": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.wasm"
     },
     {
-      "Identity": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-4x9bdaytyy.gz",
+      "Identity": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-yw9zeea4za.gz",
       "SourceId": "ECommerce",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ECommerce#[.{fingerprint=4x9bdaytyy}]!.wasm.gz",
+      "RelativePath": "_framework/ECommerce#[.{fingerprint=yw9zeea4za}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6751,8 +6751,8 @@
       "RelatedAsset": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerce.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qnc9p04y40",
-      "Integrity": "qt6DfOgBP/G06MJ3StnLnCBrHHa7S0SMjxtETgKsxH4=",
+      "Fingerprint": "pv5l493us0",
+      "Integrity": "BQlaPyFLZKUB9LDXLhl2Y8m1j7QrD8m2KyWaVcWj+6E=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerce.wasm"
@@ -9754,8 +9754,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b4tlqf02gm",
-      "Integrity": "VQOybP9WhZ3mNj7zGKz5E3HcfVSQUjye4ozxDTxYpdA=",
+      "Fingerprint": "rwu7uu44ne",
+      "Integrity": "O+65ARH2Gw02OVWevgorhYkunPF2OORvFYqIBkrWuOY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\output.css"
@@ -10789,11 +10789,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Na2ABi8AOHzlE3QN5UHO2b0Xhv8aGyMHDHE5ObxplBg=\""
+          "Value": "\"M2eBFXruYjz5jKpkgeGCW6TZVbN/w+DHd0+DyQF1M8k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:22 GMT"
+          "Value": "Thu, 24 Apr 2025 22:35:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10803,18 +10803,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Na2ABi8AOHzlE3QN5UHO2b0Xhv8aGyMHDHE5ObxplBg="
+          "Value": "sha256-M2eBFXruYjz5jKpkgeGCW6TZVbN/w+DHd0+DyQF1M8k="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\1nzj7h4phi-7l1f9p3zkc.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\1nzj7h4phi-d08xygl8jl.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000081228170"
+          "Quality": "0.000081274382"
         }
       ],
       "ResponseHeaders": [
@@ -10824,15 +10824,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12310"
+          "Value": "12303"
         },
         {
           "Name": "ETag",
-          "Value": "\"xSpbuKnkQ5ZsPu67fZ27U5M6T2szRHHaQpaLZKO3zl4=\""
+          "Value": "\"BICmoSESlmVzkESKO6iYxj5r02UnTxAg8ZHt+M6cI4M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 19:25:53 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10852,19 +10852,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Na2ABi8AOHzlE3QN5UHO2b0Xhv8aGyMHDHE5ObxplBg=\""
+          "Value": "W/\"M2eBFXruYjz5jKpkgeGCW6TZVbN/w+DHd0+DyQF1M8k=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Na2ABi8AOHzlE3QN5UHO2b0Xhv8aGyMHDHE5ObxplBg="
+          "Value": "sha256-M2eBFXruYjz5jKpkgeGCW6TZVbN/w+DHd0+DyQF1M8k="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\1nzj7h4phi-7l1f9p3zkc.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\1nzj7h4phi-d08xygl8jl.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10873,7 +10873,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12310"
+          "Value": "12303"
         },
         {
           "Name": "Content-Type",
@@ -10881,11 +10881,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xSpbuKnkQ5ZsPu67fZ27U5M6T2szRHHaQpaLZKO3zl4=\""
+          "Value": "\"BICmoSESlmVzkESKO6iYxj5r02UnTxAg8ZHt+M6cI4M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 19:25:53 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10903,7 +10903,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xSpbuKnkQ5ZsPu67fZ27U5M6T2szRHHaQpaLZKO3zl4="
+          "Value": "sha256-BICmoSESlmVzkESKO6iYxj5r02UnTxAg8ZHt+M6cI4M="
         }
       ]
     },
@@ -12833,168 +12833,7 @@
       ]
     },
     {
-      "Route": "_framework/ECommerce.4x9bdaytyy.wasm",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerce.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19221"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+PsGusFgkm0gkQ6Ao2rbtawKFlfee0Ngfo4esQwChtU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4x9bdaytyy"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ECommerce.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+PsGusFgkm0gkQ6Ao2rbtawKFlfee0Ngfo4esQwChtU="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ECommerce.4x9bdaytyy.wasm",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-4x9bdaytyy.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000121050720"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8260"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qt6DfOgBP/G06MJ3StnLnCBrHHa7S0SMjxtETgKsxH4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"+PsGusFgkm0gkQ6Ao2rbtawKFlfee0Ngfo4esQwChtU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4x9bdaytyy"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ECommerce.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+PsGusFgkm0gkQ6Ao2rbtawKFlfee0Ngfo4esQwChtU="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ECommerce.4x9bdaytyy.wasm.gz",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-4x9bdaytyy.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8260"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qt6DfOgBP/G06MJ3StnLnCBrHHa7S0SMjxtETgKsxH4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4x9bdaytyy"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ECommerce.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qt6DfOgBP/G06MJ3StnLnCBrHHa7S0SMjxtETgKsxH4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ECommerce.kal9x3bl9x.pdb",
+      "Route": "_framework/ECommerce.nan8dz75pk.pdb",
       "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerce.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -13004,7 +12843,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26784"
+          "Value": "29684"
         },
         {
           "Name": "Content-Type",
@@ -13012,11 +12851,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DHEizBQSJV1QJ0tpMvhX/+BorlE8KFoPnhvfkVs4Y5U=\""
+          "Value": "\"EY8eqgVxGtnWlwW/k4Y1p5ACuF/DMA+MjUv6h7cwYCA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:20 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13026,7 +12865,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kal9x3bl9x"
+          "Value": "nan8dz75pk"
         },
         {
           "Name": "label",
@@ -13034,18 +12873,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DHEizBQSJV1QJ0tpMvhX/+BorlE8KFoPnhvfkVs4Y5U="
+          "Value": "sha256-EY8eqgVxGtnWlwW/k4Y1p5ACuF/DMA+MjUv6h7cwYCA="
         }
       ]
     },
     {
-      "Route": "_framework/ECommerce.kal9x3bl9x.pdb",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-kal9x3bl9x.gz",
+      "Route": "_framework/ECommerce.nan8dz75pk.pdb",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-nan8dz75pk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000050075113"
+          "Quality": "0.000043848110"
         }
       ],
       "ResponseHeaders": [
@@ -13055,15 +12894,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19969"
+          "Value": "22805"
         },
         {
           "Name": "ETag",
-          "Value": "\"ik2ChPb0VK2lfmRUOFFofWBBqW6Jc210WdT4ZxfD+dA=\""
+          "Value": "\"2YgJ91l5YJcVg+fOgLCBeSvZE0WAMchji2FQBtHem8Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:22 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13083,13 +12922,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DHEizBQSJV1QJ0tpMvhX/+BorlE8KFoPnhvfkVs4Y5U=\""
+          "Value": "W/\"EY8eqgVxGtnWlwW/k4Y1p5ACuF/DMA+MjUv6h7cwYCA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kal9x3bl9x"
+          "Value": "nan8dz75pk"
         },
         {
           "Name": "label",
@@ -13097,13 +12936,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DHEizBQSJV1QJ0tpMvhX/+BorlE8KFoPnhvfkVs4Y5U="
+          "Value": "sha256-EY8eqgVxGtnWlwW/k4Y1p5ACuF/DMA+MjUv6h7cwYCA="
         }
       ]
     },
     {
-      "Route": "_framework/ECommerce.kal9x3bl9x.pdb.gz",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-kal9x3bl9x.gz",
+      "Route": "_framework/ECommerce.nan8dz75pk.pdb.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-nan8dz75pk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13112,7 +12951,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19969"
+          "Value": "22805"
         },
         {
           "Name": "Content-Type",
@@ -13120,11 +12959,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ik2ChPb0VK2lfmRUOFFofWBBqW6Jc210WdT4ZxfD+dA=\""
+          "Value": "\"2YgJ91l5YJcVg+fOgLCBeSvZE0WAMchji2FQBtHem8Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:22 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13142,7 +12981,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kal9x3bl9x"
+          "Value": "nan8dz75pk"
         },
         {
           "Name": "label",
@@ -13150,7 +12989,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ik2ChPb0VK2lfmRUOFFofWBBqW6Jc210WdT4ZxfD+dA="
+          "Value": "sha256-2YgJ91l5YJcVg+fOgLCBeSvZE0WAMchji2FQBtHem8Y="
         }
       ]
     },
@@ -13165,7 +13004,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26784"
+          "Value": "29684"
         },
         {
           "Name": "Content-Type",
@@ -13173,11 +13012,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DHEizBQSJV1QJ0tpMvhX/+BorlE8KFoPnhvfkVs4Y5U=\""
+          "Value": "\"EY8eqgVxGtnWlwW/k4Y1p5ACuF/DMA+MjUv6h7cwYCA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:20 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13187,18 +13026,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DHEizBQSJV1QJ0tpMvhX/+BorlE8KFoPnhvfkVs4Y5U="
+          "Value": "sha256-EY8eqgVxGtnWlwW/k4Y1p5ACuF/DMA+MjUv6h7cwYCA="
         }
       ]
     },
     {
       "Route": "_framework/ECommerce.pdb",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-kal9x3bl9x.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-nan8dz75pk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000050075113"
+          "Quality": "0.000043848110"
         }
       ],
       "ResponseHeaders": [
@@ -13208,15 +13047,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19969"
+          "Value": "22805"
         },
         {
           "Name": "ETag",
-          "Value": "\"ik2ChPb0VK2lfmRUOFFofWBBqW6Jc210WdT4ZxfD+dA=\""
+          "Value": "\"2YgJ91l5YJcVg+fOgLCBeSvZE0WAMchji2FQBtHem8Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:22 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13236,19 +13075,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DHEizBQSJV1QJ0tpMvhX/+BorlE8KFoPnhvfkVs4Y5U=\""
+          "Value": "W/\"EY8eqgVxGtnWlwW/k4Y1p5ACuF/DMA+MjUv6h7cwYCA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DHEizBQSJV1QJ0tpMvhX/+BorlE8KFoPnhvfkVs4Y5U="
+          "Value": "sha256-EY8eqgVxGtnWlwW/k4Y1p5ACuF/DMA+MjUv6h7cwYCA="
         }
       ]
     },
     {
       "Route": "_framework/ECommerce.pdb.gz",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-kal9x3bl9x.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\9j7ihw2gey-nan8dz75pk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13257,7 +13096,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19969"
+          "Value": "22805"
         },
         {
           "Name": "Content-Type",
@@ -13265,11 +13104,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ik2ChPb0VK2lfmRUOFFofWBBqW6Jc210WdT4ZxfD+dA=\""
+          "Value": "\"2YgJ91l5YJcVg+fOgLCBeSvZE0WAMchji2FQBtHem8Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:22 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13287,7 +13126,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ik2ChPb0VK2lfmRUOFFofWBBqW6Jc210WdT4ZxfD+dA="
+          "Value": "sha256-2YgJ91l5YJcVg+fOgLCBeSvZE0WAMchji2FQBtHem8Y="
         }
       ]
     },
@@ -13302,7 +13141,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19221"
+          "Value": "20757"
         },
         {
           "Name": "Content-Type",
@@ -13310,11 +13149,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+PsGusFgkm0gkQ6Ao2rbtawKFlfee0Ngfo4esQwChtU=\""
+          "Value": "\"Dn1g7eG0V4L9qgfgWb5TTtICW4ahC1V30fmT/+NuA5A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:20 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13324,18 +13163,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+PsGusFgkm0gkQ6Ao2rbtawKFlfee0Ngfo4esQwChtU="
+          "Value": "sha256-Dn1g7eG0V4L9qgfgWb5TTtICW4ahC1V30fmT/+NuA5A="
         }
       ]
     },
     {
       "Route": "_framework/ECommerce.wasm",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-4x9bdaytyy.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-yw9zeea4za.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000121050720"
+          "Quality": "0.000125659713"
         }
       ],
       "ResponseHeaders": [
@@ -13345,15 +13184,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8260"
+          "Value": "7957"
         },
         {
           "Name": "ETag",
-          "Value": "\"qt6DfOgBP/G06MJ3StnLnCBrHHa7S0SMjxtETgKsxH4=\""
+          "Value": "\"BQlaPyFLZKUB9LDXLhl2Y8m1j7QrD8m2KyWaVcWj+6E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:22 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13373,19 +13212,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+PsGusFgkm0gkQ6Ao2rbtawKFlfee0Ngfo4esQwChtU=\""
+          "Value": "W/\"Dn1g7eG0V4L9qgfgWb5TTtICW4ahC1V30fmT/+NuA5A=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+PsGusFgkm0gkQ6Ao2rbtawKFlfee0Ngfo4esQwChtU="
+          "Value": "sha256-Dn1g7eG0V4L9qgfgWb5TTtICW4ahC1V30fmT/+NuA5A="
         }
       ]
     },
     {
       "Route": "_framework/ECommerce.wasm.gz",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-4x9bdaytyy.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-yw9zeea4za.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13394,7 +13233,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8260"
+          "Value": "7957"
         },
         {
           "Name": "Content-Type",
@@ -13402,11 +13241,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qt6DfOgBP/G06MJ3StnLnCBrHHa7S0SMjxtETgKsxH4=\""
+          "Value": "\"BQlaPyFLZKUB9LDXLhl2Y8m1j7QrD8m2KyWaVcWj+6E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:22 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13424,7 +13263,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qt6DfOgBP/G06MJ3StnLnCBrHHa7S0SMjxtETgKsxH4="
+          "Value": "sha256-BQlaPyFLZKUB9LDXLhl2Y8m1j7QrD8m2KyWaVcWj+6E="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ECommerce.yw9zeea4za.wasm",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ECommerce.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dn1g7eG0V4L9qgfgWb5TTtICW4ahC1V30fmT/+NuA5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yw9zeea4za"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ECommerce.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dn1g7eG0V4L9qgfgWb5TTtICW4ahC1V30fmT/+NuA5A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ECommerce.yw9zeea4za.wasm",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-yw9zeea4za.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000125659713"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7957"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BQlaPyFLZKUB9LDXLhl2Y8m1j7QrD8m2KyWaVcWj+6E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Dn1g7eG0V4L9qgfgWb5TTtICW4ahC1V30fmT/+NuA5A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yw9zeea4za"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ECommerce.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dn1g7eG0V4L9qgfgWb5TTtICW4ahC1V30fmT/+NuA5A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ECommerce.yw9zeea4za.wasm.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\g7bzyufpx6-yw9zeea4za.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BQlaPyFLZKUB9LDXLhl2Y8m1j7QrD8m2KyWaVcWj+6E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 22:32:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yw9zeea4za"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ECommerce.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BQlaPyFLZKUB9LDXLhl2Y8m1j7QrD8m2KyWaVcWj+6E="
         }
       ]
     },
@@ -71837,13 +71837,13 @@
       ]
     },
     {
-      "Route": "css/output.b4tlqf02gm.css",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-b4tlqf02gm.gz",
+      "Route": "css/output.css",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-rwu7uu44ne.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000200000000"
+          "Quality": "0.000191534189"
         }
       ],
       "ResponseHeaders": [
@@ -71853,19 +71853,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4999"
+          "Value": "5220"
         },
         {
           "Name": "ETag",
-          "Value": "\"1MoUkcDuNjNwVScjcJcMUPOy0x6Rx4xngRb+lVLgvCk=\""
+          "Value": "\"0aktYUgdZ2qkw9pmlyenPNmqUb2bZp+qyvxIZBrFB3A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:12 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:28 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -71881,26 +71881,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"VQOybP9WhZ3mNj7zGKz5E3HcfVSQUjye4ozxDTxYpdA=\""
+          "Value": "W/\"O+65ARH2Gw02OVWevgorhYkunPF2OORvFYqIBkrWuOY=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "b4tlqf02gm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/output.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-VQOybP9WhZ3mNj7zGKz5E3HcfVSQUjye4ozxDTxYpdA="
+          "Value": "sha256-O+65ARH2Gw02OVWevgorhYkunPF2OORvFYqIBkrWuOY="
         }
       ]
     },
     {
-      "Route": "css/output.b4tlqf02gm.css",
+      "Route": "css/output.css",
       "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\wwwroot\\css\\output.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -71910,7 +71902,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26738"
+          "Value": "28149"
         },
         {
           "Name": "Content-Type",
@@ -71918,11 +71910,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VQOybP9WhZ3mNj7zGKz5E3HcfVSQUjye4ozxDTxYpdA=\""
+          "Value": "\"O+65ARH2Gw02OVWevgorhYkunPF2OORvFYqIBkrWuOY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:18:52 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O+65ARH2Gw02OVWevgorhYkunPF2OORvFYqIBkrWuOY="
+        }
+      ]
+    },
+    {
+      "Route": "css/output.css.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-rwu7uu44ne.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0aktYUgdZ2qkw9pmlyenPNmqUb2bZp+qyvxIZBrFB3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 22:32:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0aktYUgdZ2qkw9pmlyenPNmqUb2bZp+qyvxIZBrFB3A="
+        }
+      ]
+    },
+    {
+      "Route": "css/output.rwu7uu44ne.css",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-rwu7uu44ne.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000191534189"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5220"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0aktYUgdZ2qkw9pmlyenPNmqUb2bZp+qyvxIZBrFB3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 22:32:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"O+65ARH2Gw02OVWevgorhYkunPF2OORvFYqIBkrWuOY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rwu7uu44ne"
+        },
+        {
+          "Name": "label",
+          "Value": "css/output.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O+65ARH2Gw02OVWevgorhYkunPF2OORvFYqIBkrWuOY="
+        }
+      ]
+    },
+    {
+      "Route": "css/output.rwu7uu44ne.css",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\wwwroot\\css\\output.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O+65ARH2Gw02OVWevgorhYkunPF2OORvFYqIBkrWuOY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 22:32:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71932,7 +72069,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b4tlqf02gm"
+          "Value": "rwu7uu44ne"
         },
         {
           "Name": "label",
@@ -71940,13 +72077,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VQOybP9WhZ3mNj7zGKz5E3HcfVSQUjye4ozxDTxYpdA="
+          "Value": "sha256-O+65ARH2Gw02OVWevgorhYkunPF2OORvFYqIBkrWuOY="
         }
       ]
     },
     {
-      "Route": "css/output.b4tlqf02gm.css.gz",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-b4tlqf02gm.gz",
+      "Route": "css/output.rwu7uu44ne.css.gz",
+      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-rwu7uu44ne.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -71955,7 +72092,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4999"
+          "Value": "5220"
         },
         {
           "Name": "Content-Type",
@@ -71963,11 +72100,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1MoUkcDuNjNwVScjcJcMUPOy0x6Rx4xngRb+lVLgvCk=\""
+          "Value": "\"0aktYUgdZ2qkw9pmlyenPNmqUb2bZp+qyvxIZBrFB3A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:12 GMT"
+          "Value": "Thu, 24 Apr 2025 22:32:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71985,7 +72122,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b4tlqf02gm"
+          "Value": "rwu7uu44ne"
         },
         {
           "Name": "label",
@@ -71993,144 +72130,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1MoUkcDuNjNwVScjcJcMUPOy0x6Rx4xngRb+lVLgvCk="
-        }
-      ]
-    },
-    {
-      "Route": "css/output.css",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-b4tlqf02gm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000200000000"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4999"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1MoUkcDuNjNwVScjcJcMUPOy0x6Rx4xngRb+lVLgvCk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"VQOybP9WhZ3mNj7zGKz5E3HcfVSQUjye4ozxDTxYpdA=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VQOybP9WhZ3mNj7zGKz5E3HcfVSQUjye4ozxDTxYpdA="
-        }
-      ]
-    },
-    {
-      "Route": "css/output.css",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\wwwroot\\css\\output.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VQOybP9WhZ3mNj7zGKz5E3HcfVSQUjye4ozxDTxYpdA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:18:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VQOybP9WhZ3mNj7zGKz5E3HcfVSQUjye4ozxDTxYpdA="
-        }
-      ]
-    },
-    {
-      "Route": "css/output.css.gz",
-      "AssetFile": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\Debug\\net9.0\\compressed\\64q96b9k5n-b4tlqf02gm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4999"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1MoUkcDuNjNwVScjcJcMUPOy0x6Rx4xngRb+lVLgvCk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 22:19:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1MoUkcDuNjNwVScjcJcMUPOy0x6Rx4xngRb+lVLgvCk="
+          "Value": "sha256-0aktYUgdZ2qkw9pmlyenPNmqUb2bZp+qyvxIZBrFB3A="
         }
       ]
     },
