@@ -1,0 +1,24 @@
+# Ignore pastas de build
+bin
+obj
+
+# Ignore artefatos do Visual StudioJetBrains Rider
+.vs
+.idea
+
+# Configurações do usuário
+.user
+.suo
+
+# Cache do Tailwind ou Node (caso use com PostCSS ou npm)
+node_modules
+dist
+
+# Arquivos temporários
+.log
+.tmp
+.cache
+
+# Ignorar arquivos gerados automaticamente
+wwwrootcssapp.css
+wwwrootcssapp.css.map
