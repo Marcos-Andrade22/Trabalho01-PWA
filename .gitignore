@@ -8,6 +8,4 @@
 *.editorconfig
 *.js
 *.map
-*.wasm
-*.wasm
 *.pdb
