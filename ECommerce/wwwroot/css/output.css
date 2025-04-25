@@ -237,6 +237,9 @@
   .table {
     display: table;
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
@@ -441,6 +444,9 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .ps-3 {
     padding-inline-start: calc(var(--spacing) * 3);

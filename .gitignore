@@ -29,3 +29,4 @@ dist/
 *.gz
 *.wasm
 *.editorconfig
+*.cache

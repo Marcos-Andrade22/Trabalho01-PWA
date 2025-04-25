@@ -1,26 +1,9 @@
+@inject ProdutoService ProdutoService
+
+
 <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-    <CardProduto ImagemUrl="./Assets/planta1.jpg" Descricao="teste" Nome="Lírio-Aranha" Preco="R$ 89,90" />
-    <CardProduto ImagemUrl="./Assets/planta2.jpg" Descricao="teste" Nome="Girassol" Preco="R$ 49,90" />
-    <CardProduto ImagemUrl="./Assets/planta3.jpg" Descricao="teste" Nome="Begonia " Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta4.jpg" Descricao="teste" Nome="Lisianthus" Preco="R$ 59,90" />
-
-    <CardProduto ImagemUrl="./Assets/planta5.jpg" Descricao="teste" Nome="Conjunto Flores Casamento" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta6.jpg" Descricao="teste" Nome="Conjunto de Vasos 1" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta7.jpg" Descricao="teste" Nome="Conjunto de Vasos 2" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta8.jpg" Descricao="teste" Nome="Conjunto de Vasos 3" Preco="R$ 59,90" />
-
-    <CardProduto ImagemUrl="./Assets/planta9.jpg" Descricao="teste" Nome="Shorts Praia" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta10.jpg" Descricao="teste" Nome="Shorts Praia" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta11.jpg" Descricao="teste" Nome="Shorts Praia" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta12.jpg" Descricao="teste" Nome="Shorts Praia" Preco="R$ 59,90" />
-
-    <CardProduto ImagemUrl="./Assets/planta13.jpg" Descricao="teste" Nome="Rosa Branca" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta14.jpg" Descricao="teste" Nome="Bromélia" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta15.jpg" Descricao="teste" Nome="Peônia" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta16.jpg" Descricao="teste" Nome="Alamanda" Preco="R$ 59,90" />
-
-    <CardProduto ImagemUrl="./Assets/planta17.jpg" Descricao="teste" Nome="Begônia" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta18.jpg" Descricao="teste" Nome="Calêndula" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta19.jpg" Descricao="teste" Nome="Cactus" Preco="R$ 59,90" />
-    <CardProduto ImagemUrl="./Assets/planta20.jpg" Descricao="teste" Nome="Estrelícia" Preco="R$ 59,90" />
+    @foreach (var produto in ProdutoService.Produtos)
+    {
+        <CardProduto Produto="produto" />
+    }
 </div>
