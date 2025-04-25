@@ -1,0 +1,13 @@
+*.wasm
+*.gz
+*.js
+*.cache
+*.json
+*.targets
+*.props
+*.editorconfig
+*.js
+*.map
+*.wasm
+*.wasm
+*.pdb
