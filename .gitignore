@@ -1,0 +1,8 @@
+*.wasm
+*.gz
+*.js
+*.cache
+*.json
+*.targets
+*.props
+*.editorconfig

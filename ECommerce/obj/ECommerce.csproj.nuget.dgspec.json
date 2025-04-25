@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj": {}
+    "C:\\Users\\slxsh\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj": {
+    "C:\\Users\\slxsh\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj",
+        "projectUniqueName": "C:\\Users\\slxsh\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj",
         "projectName": "ECommerce",
-        "projectPath": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj",
-        "packagesPath": "C:\\Users\\mvpde\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mvpde\\OneDrive\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\",
+        "projectPath": "C:\\Users\\slxsh\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\ECommerce.csproj",
+        "packagesPath": "C:\\Users\\slxsh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\slxsh\\Documents\\GitHub\\Trabalho01-PWA\\ECommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mvpde\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\slxsh\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -56,13 +56,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.3, )",
+              "version": "[9.0.4, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.3, )",
+              "version": "[9.0.4, )",
               "autoReferenced": true
             }
           },
@@ -80,7 +80,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[9.0.3, 9.0.3]"
+              "version": "[9.0.4, 9.0.4]"
             }
           ],
           "frameworkReferences": {
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
