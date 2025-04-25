@@ -2,3 +2,30 @@
 *.pdb
 *.json
 *.json
+# Ignore pastas de build
+bin/
+obj/
+
+# Ignore artefatos do Visual Studio/JetBrains Rider
+.vs/
+.idea/
+
+# Configurações do usuário
+*.user
+*.suo
+
+# Cache do Tailwind ou Node (caso use com PostCSS ou npm)
+node_modules/
+dist/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.cache
+
+# Ignorar arquivos gerados automaticamente
+**/wwwroot/css/app.css
+**/wwwroot/css/app.css.map
+*.gz
+*.wasm
+*.editorconfig
