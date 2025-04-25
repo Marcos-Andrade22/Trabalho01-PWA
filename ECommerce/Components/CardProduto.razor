@@ -1,10 +1,21 @@
-<div class="flex justify-center items-center p-2 border rounded-xl shadow hover:shadow-lg transition">
+<div class="p-4 bg-white/80 border border-blue-100 rounded-xl shadow-md hover:shadow-lg transition backdrop-blur-sm">
     <a href="@Link">
-        <img src="@ImagemUrl" alt="@Nome" class="rounded-xl mb-2 w-40 h-40" />
-        <p class="font-medium">@Nome</p>
-        <p class="text-sm text-gray-600">@Preco</p>
+        <img src="@ImagemUrl" alt="@Nome" class="rounded-xl mb-2 w-full h-48 object-cover" />
+        <p class="font-medium text-gray-800">@Nome</p>
+        <p class="text-sm text-blue-600">@Preco</p>
     </a>
 </div>
+
+
+
+@* <div
+    class="flex justify-center p-2 bg-white/80 border border-blue-100 rounded-xl shadow-md hover:shadow-lg transition backdrop-blur-sm">
+    <a href="@Link">
+        <img src="@ImagemUrl" alt="@Nome" class="rounded-xl mb-2 w-full h-48 object-cover" />
+        <p class="font-medium text-gray-800">@Nome</p>
+        <p class="text-sm text-blue-600">@Preco</p>
+    </a>
+</div> *@
 
 @code {
     [Parameter] public string ImagemUrl { get; set; }
