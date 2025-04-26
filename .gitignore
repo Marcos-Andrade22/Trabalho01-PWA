@@ -1,7 +1,5 @@
 *.dll
 *.pdb
-*.json
-*.json
 # Ignore pastas de build
 bin/
 obj/
