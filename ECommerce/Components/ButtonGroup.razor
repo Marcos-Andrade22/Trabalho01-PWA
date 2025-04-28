@@ -4,23 +4,24 @@
 @inject SnackbarService SnackbarService;
 
 <div id="ButtonGroup" class="flex mt-4 gap-2">
-    <button @onclick="async () => await AdicionarAoCarrinho(produto)"
+    <button @onclick=" () => AdicionarAoCarrinho(produto)"
         class="w-1/2 bg-blue-500 text-white py-3 px-4 rounded hover:bg-blue-600 cursor-pointer">Adicionar ao
         Carrinho</button>
-    <button class="w-1/2 bg-green-500 text-white py-3 px-2 rounded hover:bg-green-600 cursor-pointer">Comprar
-        Agora</button>
+    <a href="/checkout"
+        class="flex justify-center items-center w-1/2 bg-green-500 text-white py-3 px-2 rounded hover:bg-green-600 cursor-pointer">Comprar
+        Agora</a>
 </div>
 
 @code {
     [Parameter] public Produto produto { get; set; }
 
-    private async Task AdicionarAoCarrinho(Produto produto)
+    private void AdicionarAoCarrinho(Produto produto)
     {
         if (produto == null)
         {
             return;
         }
-        await SnackbarService.ShowAsync("Produto Adicionado com sucesso!", isError: false);
         CarrinhoService.Adicionar(produto);
+        _ = SnackbarService.ShowAsync("Produto Adicionado com sucesso!", isError: false);
     }
 }

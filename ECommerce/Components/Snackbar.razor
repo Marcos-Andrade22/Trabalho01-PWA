@@ -1,11 +1,11 @@
-@using ECommerce.Services;
+@using ECommerce.Services
 
 @inject SnackbarService SnackbarService
 
 @if (IsVisible)
 {
     <div
-        class="fixed top-5 left-1/2 transform -translate-x-1/2 transition-all duration-300 ease-in-out @SnackbarClass @SnackbarColor text-white px-6 py-3 rounded-lg shadow-lg">
+        class="fixed top-5 left-1/2 transform -translate-x-1/2 transition-all duration-300 ease-in-out @AnimationClass @SnackbarColor text-white px-6 py-3 rounded-2xl shadow-lg">
         @Message
     </div>
 }
@@ -15,8 +15,9 @@
     private bool IsVisible { get; set; }
     private bool IsError { get; set; }
     private int Duration { get; set; } = 3000;
+    private CancellationTokenSource CancellationTokenSource { get; set; }
+    private string AnimationClass { get; set; } = "";
 
-    private string SnackbarClass => IsVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0";
     private string SnackbarColor => IsError ? "bg-red-500" : "bg-green-500";
 
     protected override void OnInitialized()
@@ -26,17 +27,34 @@
 
     private async Task ShowSnackbar(string message, bool isError, int duration)
     {
+        // Se já tiver um snackbar ativo, cancela ele
+        CancellationTokenSource?.Cancel();
+
         Message = message;
         IsError = isError;
         Duration = duration;
-
         IsVisible = true;
+        AnimationClass = "fade-in";
         StateHasChanged();
 
-        await Task.Delay(Duration);
+        CancellationTokenSource = new CancellationTokenSource();
+        var token = CancellationTokenSource.Token;
 
-        IsVisible = false;
-        StateHasChanged();
+        try
+        {
+            await Task.Delay(Duration, token);
+
+            AnimationClass = "fade-out";
+            StateHasChanged();
+
+            await Task.Delay(300, token); // Duração do fade-out
+            IsVisible = false;
+            StateHasChanged();
+        }
+        catch (TaskCanceledException)
+        {
+            // Ignora cancelamento
+        }
     }
 
     public void Dispose()
