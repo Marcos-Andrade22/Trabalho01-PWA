@@ -1,10 +1,40 @@
 @page "/checkout"
-<div class="p-4 max-w-xl mx-auto">
+@using ECommerce.Components
+
+<div class="p-4 max-w-xl mx-auto relative">
   <h2 class="text-xl font-bold mb-4">Finalizar Compra</h2>
+
   <form class="space-y-4">
     <input type="text" placeholder="Nome completo" class="w-full border rounded-xl p-2" />
     <input type="text" placeholder="Endereço" class="w-full border rounded-xl p-2" />
     <input type="text" placeholder="Cartão de crédito" class="w-full border rounded-xl p-2" />
-    <a href="/confirmacao" class="block bg-blue-500 text-white text-center px-4 py-2 rounded-xl hover:bg-blue-600">Confirmar Pedido</a>
+    <button type="button" class="block bg-blue-500 text-white text-center px-4 py-2 rounded-xl hover:bg-blue-600 w-full"
+            @onclick="MostrarFormularioEndereco">
+      Confirmar Pedido
+    </button>
   </form>
+
+@code {
+    private bool exibirFormularioEndereco = false;
+
+    private void MostrarFormularioEndereco()
+    {
+        exibirFormularioEndereco = true;
+    }
+
+    private void FecharFormularioEndereco()
+    {
+      exibirFormularioEndereco = false;
+    }
+}
+
+  @if (exibirFormularioEndereco)
+  {
+    <div class="fixed inset-0 bg-[rgba(0,0,0,0.5)] flex justify-center items-center z-50"
+      @onclick="FecharFormularioEndereco">
+      <div class="animate-fade-in-up" @onclick:stopPropagation=true>
+        <FormEndereco />
+      </div>
+    </div>
+  }
 </div>

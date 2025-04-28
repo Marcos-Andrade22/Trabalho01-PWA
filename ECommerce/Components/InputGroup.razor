@@ -2,8 +2,8 @@
 
 <div>
     <label class="block text-sm text-gray-600 mb-1">@Label</label>
-    <InputText @bind-Value="Value" @bind-Value:event="oninput"
-               class="w-full border-b border-gray-400 focus:outline-none focus:border-cherry3 transition duration-150" />
+    <InputText @bind-Value="Value" @bind:event="oninput"
+        class="w-full border-b border-gray-400 focus:outline-none focus:border-cherry3 transition duration-150" />
 </div>
 
 @code {
@@ -15,6 +15,7 @@
 
     [Parameter]
     public EventCallback<string> ValueChanged { get; set; }
+
 
     private string CurrentValue
     {
@@ -28,4 +29,5 @@
             }
         }
     }
+
 }
