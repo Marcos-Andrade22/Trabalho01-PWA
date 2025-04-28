@@ -28,20 +28,44 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/ButtonGroup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCdXR0b25Hcm91cC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/CardProduto.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJkUHJvZHV0by5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/CartItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJ0SXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/Header.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/InputGroup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJbnB1dEdyb3VwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/ItemGrid.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJdGVtR3JpZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/MainContainer.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYWluQ29udGFpbmVyLnJhem9y
+[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/Section.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWN0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/Snackbar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTbmFja2Jhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/Subtitle.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdWJ0aXRsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Pages/Carrinho.razor]
@@ -54,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Pages/Confirmacao.Razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZmlybWFjYW8uUmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Pages/FormEndereco.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybUVuZGVyZWNvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Pages/Home.razor]

@@ -1,14 +1,69 @@
 @page "/carrinho"
+@using ECommerce.Services
+
+@inject CarrinhoService CarrinhoService;
+
 <div class="p-4 max-w-3xl mx-auto">
   <h2 class="text-xl font-bold mb-4">Seu Carrinho</h2>
   <div class="bg-white rounded-2xl shadow p-4">
-    <div class="flex justify-between items-center border-b pb-2 mb-2">
-      <p>Biquíni Verão</p>
-      <p>R$ 89,90</p>
+    <div class="flex flex-col justify-between items-center pb-2 mb-2">
+      @inject CarrinhoService CarrinhoService
+
+
+      @if (CarrinhoService.Itens.Count == 0)
+      {
+
+        <p class="text-gray-500">Seu carrinho está vazio.</p>
+      }
+      else
+      {
+        hasSomethingInCart = true;
+        @foreach (var item in CarrinhoService.Itens)
+        {
+          <div class="flex flex-row justify-between items-center border-b pb-2 mb-2">
+            <CartItem Produto="item.Produto" />
+            <div class="=flex justify-between items-center mt-2 ml-2">
+              <p class="text-sm text-gray-600">Quantidade: @item.Quantidade</p>
+              <button @onclick="() => RemoverDoCarrinho(item.Produto)"
+                class="text-red-500 hover:text-red-700 cursor-pointer">
+                Excluir
+                <i class="fas fa-trash-alt"></i> <!-- ícone de lixeira, opcional -->
+              </button>
+            </div>
+          </div>
+        }
+      }
+
     </div>
-    <div class="text-right font-semibold">Total: R$ 89,90</div>
-    <div class="text-right mt-4">
-      <a href="/checkout" class="bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600">Finalizar Compra</a>
-    </div>
+    <div class="text-right font-semibold mt-4">Total: R$ @CarrinhoService.Total.ToString("F2")</div>
+    @if (hasSomethingInCart)
+    {
+      <div class="text-right mt-4">
+        <a href="/checkout" class="bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600">Finalizar Compra</a>
+      </div>
+    }
+    else
+    {
+      <div class="text-right mt-4">
+        <a href="/" class="bg-blue-500 text-white px-4 py-2 rounded-xl hover:bg-blue-600">Continuar Comprando</a>
+      </div>
+    }
+
   </div>
 </div>
+
+@code {
+  private bool hasSomethingInCart = false;
+  private void RemoverDoCarrinho(Produto produto)
+  {
+    CarrinhoService.Remover(produto);
+    if (CarrinhoService.Itens.Count == 0)
+    {
+      hasSomethingInCart = false;
+    }
+    else
+    {
+      hasSomethingInCart = true;
+    }
+  }
+}

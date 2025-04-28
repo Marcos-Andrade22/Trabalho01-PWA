@@ -1,0 +1,78 @@
+@using ECommerce.Services
+
+@inject SnackbarService SnackbarService
+
+@if (IsVisible)
+{
+    <div
+        class="fixed top-5 left-1/2 transform -translate-x-1/2 transition-all duration-300 ease-in-out @AnimationClass @SnackbarColor text-white px-6 py-3 rounded-2xl shadow-lg">
+        @Message
+    </div>
+}
+
+@code {
+    private string Message { get; set; }
+    private bool IsVisible { get; set; }
+    private bool IsError { get; set; }
+    private int Duration { get; set; } = 3000;
+    private CancellationTokenSource _cts;
+    private string AnimationClass { get; set; } = "";
+
+    private string SnackbarColor => IsError ? "bg-red-500" : "bg-green-500";
+
+    protected override void OnInitialized()
+    {
+        SnackbarService.OnShow += ShowSnackbar;
+    }
+
+    private async Task ShowSnackbar(string message, bool isError, int duration)
+    {
+        // Se tiver snackbar anterior ativa, cancela e descarta
+        if (_cts != null)
+        {
+            _cts.Cancel();
+            _cts.Dispose();
+        }
+
+        _cts = new CancellationTokenSource();
+        var token = _cts.Token;
+
+        // Some imediatamente com a snackbar atual
+        IsVisible = false;
+        AnimationClass = "";
+        StateHasChanged();
+
+        // Aguarda um pouquinho para permitir re-renderização
+        await Task.Delay(50);
+
+        // Agora mostra a nova snackbar
+        Message = message;
+        IsError = isError;
+        Duration = duration;
+        IsVisible = true;
+        AnimationClass = "fade-in";
+        StateHasChanged();
+
+        try
+        {
+            await Task.Delay(Duration, token);
+
+            AnimationClass = "fade-out";
+            StateHasChanged();
+
+            await Task.Delay(300, token); // Aguarda o fade-out
+            IsVisible = false;
+            StateHasChanged();
+        }
+        catch (TaskCanceledException)
+        {
+            // Cancelado — ignora
+        }
+    }
+
+    public void Dispose()
+    {
+        SnackbarService.OnShow -= ShowSnackbar;
+        _cts?.Dispose();
+    }
+}

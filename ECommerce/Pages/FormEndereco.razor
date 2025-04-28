@@ -2,9 +2,11 @@
 @using ECommerce.Components
 @using ECommerce.Models
 
-<div class="flex justify-center items-center min-h-screen bg-linear-to-t from-blue-500 to-blue-300"> <!-- Background !-->
+<div class="flex justify-center items-center min-h-screen bg-linear-to-t from-blue-500 to-blue-300">
+    <!-- Background !-->
     <div class="bg-white p-6 rounded-lg shadow-lg w-96"> <!-- Card !-->
-        <h1 class="text-2xl font-bold mb-4 text-center text-blue-500">Endereço</h1>
+        <h1 class="text-2xl font-bold mb-4 text-center text-blue-500">
+            Endereço</h1>
 
         <EditForm Model="@endereco" OnValidSubmit="@SalvarEndereco">
             <DataAnnotationsValidator />
@@ -19,7 +21,8 @@
                 <InputGroup Label="Estado" Value="@endereco.Estado" />
             </div>
 
-            <button type="submit" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 border border-blue-600 w-full">
+            <button type="submit"
+                class="cursor-pointer mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 border border-blue-600 w-full">
                 Salvar
             </button>
         </EditForm>
@@ -31,6 +34,5 @@
 
     private void SalvarEndereco()
     {
-        Console.WriteLine($"Endereço salvo: {endereco.CEP}, {endereco.Rua}, {endereco.Numero}");
     }
 }
