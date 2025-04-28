@@ -21,12 +21,18 @@
     {
         exibirFormularioEndereco = true;
     }
+
+    private void FecharFormularioEndereco()
+    {
+      exibirFormularioEndereco = false;
+    }
 }
 
   @if (exibirFormularioEndereco)
   {
-    <div class="fixed inset-0 bg-[rgba(0,0,0,0.5)] flex justify-center items-center z-50">
-      <div class="animate-fade-in-up">
+    <div class="fixed inset-0 bg-[rgba(0,0,0,0.5)] flex justify-center items-center z-50"
+      @onclick="FecharFormularioEndereco">
+      <div class="animate-fade-in-up" @onclick:stopPropagation=true>
         <FormEndereco />
       </div>
     </div>

@@ -16,3 +16,11 @@
     animation: fadeInUp 0.4s ease-out forwards;
   }
 }
+
+@theme {
+  --color-cherry5: #564740;
+  --color-cherry4: #4c1711;
+  --color-cherry3: #aa6f73;
+  --color-cherry2: #fcdfe4;
+  --color-cherry1: #ebe7e4;
+}
