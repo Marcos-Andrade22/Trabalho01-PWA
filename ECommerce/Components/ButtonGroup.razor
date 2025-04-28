@@ -1,9 +1,27 @@
+@using ECommerce.Services
+
+@inject CarrinhoService CarrinhoService;
+
 <div id="ButtonGroup" class="flex mt-4 gap-2">
-    <button class="w-1/2 bg-blue-500 text-white py-3 px-4 rounded hover:bg-blue-600">Adicionar ao
+    <button @onclick="() => AdicionarAoCarrinho(produto)"
+        class="w-1/2 bg-blue-500 text-white py-3 px-4 rounded hover:bg-blue-600 cursor-pointer">Adicionar ao
         Carrinho</button>
-    <button class="w-1/2 bg-green-500 text-white py-3 px-2 rounded hover:bg-green-600">Comprar Agora</button>
+    <button class="w-1/2 bg-green-500 text-white py-3 px-2 rounded hover:bg-green-600 cursor-pointer">Comprar
+        Agora</button>
 </div>
 
 @code {
+    [Parameter] public Produto produto { get; set; }
 
+    private void AdicionarAoCarrinho(Produto produto)
+    {
+        Console.WriteLine("Produto: ", produto);
+        if (produto == null)
+        {
+            Console.WriteLine("Produto é nulo. Não é possível adicionar ao carrinho.");
+            return;
+        }
+        Console.WriteLine($"Adicionando produto: {produto.Nome} ao carrinho.");
+        CarrinhoService.Adicionar(produto);
+    }
 }

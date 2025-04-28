@@ -1,0 +1,23 @@
+@code {
+    [Parameter] public string Message { get; set; }
+    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public int Duration { get; set; } = 3000; // tempo em ms (padrão 3 segundos)
+
+    private string SnackbarClass => IsVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0";
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (IsVisible)
+        {
+            // Aguarda o tempo de exibição e depois oculta
+            await Task.Delay(Duration);
+            IsVisible = false;
+            StateHasChanged();
+        }
+    }
+}
+
+<div
+    class="fixed bottom-5 left-1/2 transform -translate-x-1/2 transition-all duration-300 ease-in-out @SnackbarClass bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg">
+    @Message
+</div>
