@@ -26,8 +26,8 @@
               <p class="text-sm text-gray-600">Quantidade: @item.Quantidade</p>
               <button @onclick="() => RemoverDoCarrinho(item.Produto)"
                 class="text-red-500 hover:text-red-700 cursor-pointer">
-                <i class="fas fa-trash-alt"></i> <!-- ícone de lixeira, opcional -->
                 Excluir
+                <i class="fas fa-trash-alt"></i> <!-- ícone de lixeira, opcional -->
               </button>
             </div>
           </div>
@@ -57,5 +57,13 @@
   private void RemoverDoCarrinho(Produto produto)
   {
     CarrinhoService.Remover(produto);
+    if (CarrinhoService.Itens.Count == 0)
+    {
+      hasSomethingInCart = false;
+    }
+    else
+    {
+      hasSomethingInCart = true;
+    }
   }
 }
