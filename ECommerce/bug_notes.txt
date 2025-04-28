@@ -1,0 +1,3 @@
+1 ̶q̶u̶a̶n̶d̶o̶ ̶o̶ ̶t̶a̶m̶a̶n̶h̶o̶ ̶d̶a̶ ̶d̶e̶s̶c̶r̶i̶ç̶ã̶o̶ ̶é̶ ̶d̶i̶f̶e̶r̶e̶n̶t̶e̶,̶ ̶a̶ ̶p̶o̶s̶i̶ç̶ã̶o̶ ̶d̶o̶ ̶T̶w̶o̶B̶u̶t̶t̶o̶n̶G̶r̶o̶u̶p̶ ̶é̶ ̶d̶i̶f̶e̶r̶e̶n̶t̶e̶ -> RESOLVIDO
+
+2 - Responsividade do card de itens do carrinho está incorreta /// COMPONENTE LINHA 23 Carrinho.razor
