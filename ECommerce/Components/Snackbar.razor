@@ -15,7 +15,7 @@
     private bool IsVisible { get; set; }
     private bool IsError { get; set; }
     private int Duration { get; set; } = 3000;
-    private CancellationTokenSource CancellationTokenSource { get; set; }
+    private CancellationTokenSource _cts;
     private string AnimationClass { get; set; } = "";
 
     private string SnackbarColor => IsError ? "bg-red-500" : "bg-green-500";
@@ -27,18 +27,31 @@
 
     private async Task ShowSnackbar(string message, bool isError, int duration)
     {
-        // Se já tiver um snackbar ativo, cancela ele
-        CancellationTokenSource?.Cancel();
+        // Se tiver snackbar anterior ativa, cancela e descarta
+        if (_cts != null)
+        {
+            _cts.Cancel();
+            _cts.Dispose();
+        }
 
+        _cts = new CancellationTokenSource();
+        var token = _cts.Token;
+
+        // Some imediatamente com a snackbar atual
+        IsVisible = false;
+        AnimationClass = "";
+        StateHasChanged();
+
+        // Aguarda um pouquinho para permitir re-renderização
+        await Task.Delay(50);
+
+        // Agora mostra a nova snackbar
         Message = message;
         IsError = isError;
         Duration = duration;
         IsVisible = true;
         AnimationClass = "fade-in";
         StateHasChanged();
-
-        CancellationTokenSource = new CancellationTokenSource();
-        var token = CancellationTokenSource.Token;
 
         try
         {
@@ -47,18 +60,19 @@
             AnimationClass = "fade-out";
             StateHasChanged();
 
-            await Task.Delay(300, token); // Duração do fade-out
+            await Task.Delay(300, token); // Aguarda o fade-out
             IsVisible = false;
             StateHasChanged();
         }
         catch (TaskCanceledException)
         {
-            // Ignora cancelamento
+            // Cancelado — ignora
         }
     }
 
     public void Dispose()
     {
         SnackbarService.OnShow -= ShowSnackbar;
+        _cts?.Dispose();
     }
 }
