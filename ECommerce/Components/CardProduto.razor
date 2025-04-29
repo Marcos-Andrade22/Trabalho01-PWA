@@ -1,22 +1,19 @@
 @code {
-    [Parameter] public Produto Produto { get; set; }
+  [Parameter] public Produto Produto { get; set; }
 }
 
-<div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg">
+<div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg h-full flex flex-col justify-between">
+  <div>
     <img src="@Produto.ImagemUrl" alt="@Produto.Nome" class="w-full h-40 object-cover rounded-md mb-4" />
 
-    <div class="flex justify-center items-center flex-col">
-        <h3 class="text-lg font-semibold text-gray-800">@Produto.Nome</h3>
-        <p class="text-gray-500">@Produto.Descricao</p>
-        <p class="text-lg font-bold text-green-500">R$ @Produto.Preco.ToString("F2")</p>
+    <div class="flex flex-col items-center text-center">
+      <h3 class="text-lg font-semibold text-gray-800">@Produto.Nome</h3>
+      <p class="text-gray-500">@Produto.Descricao</p>
+      <p class="text-lg font-bold text-green-500">R$ @Produto.Preco.ToString("F2")</p>
     </div>
+  </div>
 
+  <div class="mt-4">
     <ButtonGroup produto="Produto" />
+  </div>
 </div>
-
-@* <DropdownItem key={index} onClick={() => handleSelectItem(item)}>
-          {item.name.length > 27
-            ? item.name.substring(0, 25) + "..."
-            : item.name}
-          <TemplateLanguage>{item.language}</TemplateLanguage>
-        </DropdownItem> *@
