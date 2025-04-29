@@ -16,9 +16,8 @@
       <input type="text" placeholder="CVV" class="w-1/2 border rounded-xl p-2" />
     </div>
 
-    <button type="button"
-            class="bg-blue-500 text-white px-4 py-2 rounded-xl hover:bg-blue-600"
-            @onclick="MostrarFormularioEndereco">
+    <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded-xl hover:bg-blue-600"
+      @onclick="MostrarFormularioEndereco">
       Endereço
     </button>
   </form>
@@ -48,9 +47,8 @@
     }
   </div>
 
-  <button type="button"
-          class="w-full bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600 mb-4"
-          @onclick="ConfirmarPedido">
+  <button type="button" class="w-full bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600 mb-4"
+    @onclick="ConfirmarPedido">
     Confirmar Pedido
   </button>
 </div>
@@ -58,15 +56,9 @@
 @if (exibirFormularioEndereco)
 {
   <div class="fixed inset-0 bg-[rgba(0,0,0,0.5)] flex justify-center items-center z-50"
-       @onclick="FecharFormularioEndereco">
+    @onclick="FecharFormularioEndereco">
     <div class="bg-white rounded-xl p-6 animate-fade-in-up" @onclick:stopPropagation="true">
-      <FormEndereco />
-      <div class="text-right mt-4">
-        <button class="bg-gray-300 px-4 py-2 rounded-xl hover:bg-gray-400"
-                @onclick="FecharFormularioEndereco">
-          Fechar
-        </button>
-      </div>
+      <FormEndereco OnFecharFormulario="FecharFormularioEndereco" />
     </div>
   </div>
 }
@@ -75,10 +67,10 @@
   private bool exibirFormularioEndereco = false;
 
   private void MostrarFormularioEndereco()
-    => exibirFormularioEndereco = true;
+  => exibirFormularioEndereco = true;
 
   private void FecharFormularioEndereco()
-    => exibirFormularioEndereco = false;
+  => exibirFormularioEndereco = false;
 
   private void ConfirmarPedido()
   {

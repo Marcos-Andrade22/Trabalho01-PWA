@@ -25,7 +25,7 @@
                 FieldExpression="() => endereco.Estado" />
         </div>
 
-        <button type="submit"
+        <button type="submit" @onclick="OnFecharFormulario"
             class="mt-4 bg-cherry3 text-white py-2 px-4 rounded hover:bg-cherry4 border border-white w-full transition-colors duration-300">
             Salvar
         </button>
@@ -33,6 +33,7 @@
 </div>
 
 @code {
+    [Parameter] public EventCallback OnFecharFormulario { get; set; }
     private Endereco endereco = new Endereco();
 
     private void SalvarEndereco()
