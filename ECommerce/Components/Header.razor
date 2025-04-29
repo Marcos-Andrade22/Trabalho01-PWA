@@ -19,8 +19,9 @@
       @* Badge que aparece somente se tiver pelo menos 1 item *@
       @if (CarrinhoService.Itens.Count > 0)
       {
-        <span class="absolute -top-1 -right-3 bg-cherry4 text-cherry1 text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-          @CarrinhoService.Itens.Count
+        <span
+          class="absolute -top-1 -right-3 bg-cherry4 text-cherry1 text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+          @CarrinhoService.Itens.Sum(i => i.Quantidade)
         </span>
       }
     </div>
