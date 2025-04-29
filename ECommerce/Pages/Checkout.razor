@@ -1,39 +1,87 @@
 @page "/checkout"
 @using ECommerce.Components
+@using ECommerce.Services
+@inject CarrinhoService CarrinhoService
+@inject NavigationManager NavigationManager
 
-<div class="p-4 max-w-xl mx-auto relative">
+<div class="p-4 max-w-xl mx-auto">
   <h2 class="text-xl font-bold mb-4">Finalizar Compra</h2>
 
-  <form class="space-y-4">
+  <form class="space-y-4 mb-6">
     <input type="text" placeholder="Nome completo" class="w-full border rounded-xl p-2" />
-    <input type="text" placeholder="Cartão de crédito" class="w-full border rounded-xl p-2" />
-    <button type="button" class="block bg-cherry3 text-white text-center px-4 py-2 rounded-xl hover:bg-cherry4 w-full"
+    <input type="text" placeholder="Número do Cartão" class="w-full border rounded-xl p-2" />
+    <input type="text" placeholder="Nome impresso no cartão" class="w-full border rounded-xl p-2" />
+    <div class="flex space-x-2">
+      <input type="text" placeholder="MM/AA" class="w-1/2 border rounded-xl p-2" />
+      <input type="text" placeholder="CVV" class="w-1/2 border rounded-xl p-2" />
+    </div>
+
+    <button type="button"
+            class="bg-blue-500 text-white px-4 py-2 rounded-xl hover:bg-blue-600"
             @onclick="MostrarFormularioEndereco">
-      Confirmar Pedido
+      Endereço
     </button>
   </form>
 
-@code {
-    private bool exibirFormularioEndereco = false;
+  <div class="bg-white rounded-xl shadow p-4 mb-6">
+    <h3 class="text-lg font-semibold mb-2">Resumo do Pedido</h3>
 
-    private void MostrarFormularioEndereco()
+    @if (CarrinhoService.Itens.Count == 0)
     {
-        exibirFormularioEndereco = true;
+      <p class="text-gray-500">Seu carrinho está vazio.</p>
     }
-
-    private void FecharFormularioEndereco()
+    else
     {
-      exibirFormularioEndereco = false;
+      @foreach (var item in CarrinhoService.Itens)
+      {
+        <div class="flex justify-between border-b py-2">
+          <div>
+            <p class="font-medium">@item.Produto.Nome</p>
+            <p class="text-sm text-gray-500">Qtd: @item.Quantidade</p>
+          </div>
+          <p class="text-sm font-semibold">R$ @item.Total.ToString("F2")</p>
+        </div>
+      }
+      <div class="text-right font-bold text-lg mt-4">
+        Total: R$ @CarrinhoService.Total.ToString("F2")
+      </div>
     }
-}
+  </div>
 
-  @if (exibirFormularioEndereco)
-  {
-    <div class="fixed inset-0 bg-[rgba(0,0,0,0.5)] flex justify-center items-center z-50"
-      @onclick="FecharFormularioEndereco">
-      <div class="animate-fade-in-up" @onclick:stopPropagation=true>
-        <FormEndereco />
+  <button type="button"
+          class="w-full bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600 mb-4"
+          @onclick="ConfirmarPedido">
+    Confirmar Pedido
+  </button>
+</div>
+
+@if (exibirFormularioEndereco)
+{
+  <div class="fixed inset-0 bg-[rgba(0,0,0,0.5)] flex justify-center items-center z-50"
+       @onclick="FecharFormularioEndereco">
+    <div class="bg-white rounded-xl p-6 animate-fade-in-up" @onclick:stopPropagation="true">
+      <FormEndereco />
+      <div class="text-right mt-4">
+        <button class="bg-gray-300 px-4 py-2 rounded-xl hover:bg-gray-400"
+                @onclick="FecharFormularioEndereco">
+          Fechar
+        </button>
       </div>
     </div>
+  </div>
+}
+
+@code {
+  private bool exibirFormularioEndereco = false;
+
+  private void MostrarFormularioEndereco()
+    => exibirFormularioEndereco = true;
+
+  private void FecharFormularioEndereco()
+    => exibirFormularioEndereco = false;
+
+  private void ConfirmarPedido()
+  {
+    NavigationManager.NavigateTo("/confirmacao");
   }
-</div>
+}
