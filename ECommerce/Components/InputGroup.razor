@@ -1,9 +1,11 @@
 @using Microsoft.AspNetCore.Components.Forms
+@using System.Linq.Expressions
 
-<div>
+<div class="mb-4">
     <label class="block text-sm text-gray-600 mb-1">@Label</label>
-    <InputText @bind-Value="Value" @bind-Value:event="oninput"
-               class="w-full border-b border-gray-400 focus:outline-none focus:border-blue-700 transition duration-150" />
+    <InputText Value="@Value" ValueChanged="ValueChanged" ValueExpression="FieldExpression" oninput="@OnInputChanged"
+        class="w-full border-b border-gray-400 focus:outline-none focus:border-blue-700 transition duration-150" />
+    <ValidationMessage For="@FieldExpression" />
 </div>
 
 @code {
@@ -16,16 +18,11 @@
     [Parameter]
     public EventCallback<string> ValueChanged { get; set; }
 
-    private string CurrentValue
+    [Parameter]
+    public Expression<Func<string>> FieldExpression { get; set; }
+
+    private async Task OnInputChanged(ChangeEventArgs e)
     {
-        get => Value;
-        set
-        {
-            if (Value != value)
-            {
-                Value = value;
-                ValueChanged.InvokeAsync(value);
-            }
-        }
+        await ValueChanged.InvokeAsync(e.Value?.ToString());
     }
 }
