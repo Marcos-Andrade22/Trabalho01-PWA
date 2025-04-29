@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/FormEndereco.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb3JtRW5kZXJlY28ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Components/Header.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,10 +82,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Pages/Confirmacao.Razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uZmlybWFjYW8uUmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Pages/FormEndereco.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybUVuZGVyZWNvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mvpde/OneDrive/Documents/GitHub/Trabalho01-PWA/ECommerce/Pages/Home.razor]

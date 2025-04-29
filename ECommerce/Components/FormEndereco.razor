@@ -1,27 +1,36 @@
 @using ECommerce.Components
 @using ECommerce.Models
+@using System.ComponentModel.DataAnnotations
 
-    <div class="bg-white p-6 rounded-lg shadow-lg w-96"> <!-- Card !-->
-        <h1 class="text-2xl font-bold mb-4 text-center text-cherry3">Endereço</h1>
+<div class="bg-white p-6 rounded-lg shadow-lg w-96">
+    <h1 class="text-2xl font-bold mb-4 text-center text-cherry3">Endereço</h1>
 
-        <EditForm Model="@endereco" OnValidSubmit="@SalvarEndereco">
-            <DataAnnotationsValidator />
-            <ValidationSummary />
+    <EditForm Model="@endereco" OnValidSubmit="@SalvarEndereco">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
 
-            <div class="space-y-4">
-                <InputGroup Label="CEP" Value="@endereco.CEP" />
-                <InputGroup Label="Rua" Value="@endereco.Rua" />
-                <InputGroup Label="Número" Value="@endereco.Numero" />
-                <InputGroup Label="Complemento" Value="@endereco.Complemento" />
-                <InputGroup Label="Cidade" Value="@endereco.Cidade" />
-                <InputGroup Label="Estado" Value="@endereco.Estado" />
-            </div>
+        <div class="space-y-4">
+            <InputGroup Label="CEP" Value="@endereco.CEP" ValueChanged="@((string val) => endereco.CEP = val)"
+                FieldExpression="() => endereco.CEP" />
+            <InputGroup Label="Rua" Value="@endereco.Rua" ValueChanged="@((string val) => endereco.Rua = val)"
+                FieldExpression="() => endereco.Rua" />
+            <InputGroup Label="Número" Value="@endereco.Numero" ValueChanged="@((string val) => endereco.Numero = val)"
+                FieldExpression="() => endereco.Numero" />
+            <InputGroup Label="Complemento" Value="@endereco.Complemento"
+                ValueChanged="@((string val) => endereco.Complemento = val)"
+                FieldExpression="() => endereco.Complemento" />
+            <InputGroup Label="Cidade" Value="@endereco.Cidade" ValueChanged="@((string val) => endereco.Cidade = val)"
+                FieldExpression="() => endereco.Cidade" />
+            <InputGroup Label="Estado" Value="@endereco.Estado" ValueChanged="@((string val) => endereco.Estado = val)"
+                FieldExpression="() => endereco.Estado" />
+        </div>
 
-            <button type="submit" class="mt-4 bg-cherry3 text-white py-2 px-4 rounded hover:bg-cherry4 border border-white w-full transition-colors duration-300">
-                Salvar
-            </button>
-        </EditForm>
-    </div>
+        <button type="submit"
+            class="mt-4 bg-cherry3 text-white py-2 px-4 rounded hover:bg-cherry4 border border-white w-full transition-colors duration-300">
+            Salvar
+        </button>
+    </EditForm>
+</div>
 
 @code {
     private Endereco endereco = new Endereco();
