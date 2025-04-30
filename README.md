@@ -1,4 +1,4 @@
 Trabalho PWA - ECommerce Floricultura
 
 Autores: Caio Leite Fernandes e
-         Marcos Andrade
+         Marcos Vinícius Pinheiro de Andrade
