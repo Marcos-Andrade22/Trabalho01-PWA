@@ -13,7 +13,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowBlazor", policy =>
     {
-        policy.WithOrigins("https://localhost:7001", "http://localhost:5001")
+        policy.WithOrigins("https://localhost:5084", "http://localhost:5084")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -21,7 +21,6 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -32,7 +31,6 @@ app.UseCors("AllowBlazor");
 app.UseRouting();
 app.MapControllers();
 
-// Criar banco se não existir
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
