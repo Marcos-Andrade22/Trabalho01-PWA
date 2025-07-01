@@ -148,7 +148,7 @@
 
             <div class="login-link">
                 <p>Já possui uma conta?</p>
-                <a href="/login" class="link-btn">
+                <a href="/" class="link-btn">
                     Fazer Login
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -157,12 +157,6 @@
                 </a>
             </div>
         </div>
-    </div>
-
-    <div class="background-decoration">
-        <div class="decoration-circle circle-1"></div>
-        <div class="decoration-circle circle-2"></div>
-        <div class="decoration-circle circle-3"></div>
     </div>
 </div>
 
@@ -458,7 +452,7 @@
                 isSuccess = true;
                 message = "Conta criada com sucesso! Redirecionando para o login...";
                 await Task.Delay(2000);
-                Navigation.NavigateTo("/login");
+                Navigation.NavigateTo("/");
             }
             else
             {
