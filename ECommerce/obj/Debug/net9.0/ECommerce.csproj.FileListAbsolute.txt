@@ -2166,10 +2166,10 @@ D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0
 D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0\refint\ECommerce.dll
 D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0\ECommerce.pdb
 D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0\ref\ECommerce.dll
-D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\bin\Debug\net9.0\wwwroot\_framework\ECommerce.fe9h5nb7a4.wasm
-D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\bin\Debug\net9.0\wwwroot\_framework\ECommerce.62n5kvy2ke.pdb
-D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\bin\Debug\net9.0\wwwroot\_framework\ECommerce.fe9h5nb7a4.wasm.gz
-D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\bin\Debug\net9.0\wwwroot\_framework\ECommerce.62n5kvy2ke.pdb.gz
-D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0\compressed\g7bzyufpx6-fe9h5nb7a4.gz
-D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0\compressed\9j7ihw2gey-62n5kvy2ke.gz
-D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0\compressed\1nzj7h4phi-uyfmg6nbr1.gz
+D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\bin\Debug\net9.0\wwwroot\_framework\ECommerce.c5dkrgjvwo.wasm
+D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\bin\Debug\net9.0\wwwroot\_framework\ECommerce.q8mubgmrz6.pdb
+D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\bin\Debug\net9.0\wwwroot\_framework\ECommerce.c5dkrgjvwo.wasm.gz
+D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\bin\Debug\net9.0\wwwroot\_framework\ECommerce.q8mubgmrz6.pdb.gz
+D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0\compressed\g7bzyufpx6-c5dkrgjvwo.gz
+D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0\compressed\9j7ihw2gey-q8mubgmrz6.gz
+D:\Faculdade\Faculdade 3o Período\PWA\Trabalho01-PWA\ECommerce\obj\Debug\net9.0\compressed\1nzj7h4phi-zni7e32isi.gz

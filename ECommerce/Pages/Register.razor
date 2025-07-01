@@ -1,4 +1,11 @@
+<div class="background-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+        
 @page "/register"
+
 @using System.ComponentModel.DataAnnotations
 @using ECommerce.Services
 @inject AuthService AuthService
@@ -6,131 +13,422 @@
 
 <PageTitle>Registrar - ECommerce</PageTitle>
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-5">
-            <div class="card shadow">
-                <div class="card-body p-4">
-                    <h2 class="text-center mb-4">Criar Conta</h2>
-                    
-                    <EditForm Model="@registerModel" OnValidSubmit="@HandleRegister">
-                        <DataAnnotationsValidator />
-                        @if (!string.IsNullOrEmpty(message))
-                        {
-                            <div class="alert @(isSuccess ? "alert-success" : "alert-danger") mb-3">
-                                @message
-                            </div>
-                        }
-
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Nome de Usuário</label>
-                            <InputText id="username" 
-                                     class="form-control" 
-                                     @bind-Value="registerModel.Username" 
-                                     placeholder="Digite seu nome de usuário" />
-                            <ValidationMessage For="@(() => registerModel.Username)" class="text-danger" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <InputText id="email" 
-                                     type="email" 
-                                     class="form-control" 
-                                     @bind-Value="registerModel.Email" 
-                                     placeholder="Digite seu email" />
-                            <ValidationMessage For="@(() => registerModel.Email)" class="text-danger" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Senha</label>
-                            <InputText id="password" 
-                                     type="password" 
-                                     class="form-control" 
-                                     @bind-Value="registerModel.Password" 
-                                     placeholder="Digite sua senha" />
-                            <ValidationMessage For="@(() => registerModel.Password)" class="text-danger" />
-                            <div class="form-text">A senha deve ter pelo menos 6 caracteres.</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="confirmPassword" class="form-label">Confirmar Senha</label>
-                            <InputText id="confirmPassword" 
-                                     type="password" 
-                                     class="form-control" 
-                                     @bind-Value="registerModel.ConfirmPassword" 
-                                     placeholder="Confirme sua senha" />
-                            <ValidationMessage For="@(() => registerModel.ConfirmPassword)" class="text-danger" />
-                        </div>
-
-                        <div class="d-grid">
-                            <button type="submit" 
-                                    class="btn btn-success btn-lg" 
-                                    disabled="@isLoading">
-                                @if (isLoading)
-                                {
-                                    <span class="spinner-border spinner-border-sm me-2" role="status"></span>
-                                    <span>Criando conta...</span>
-                                }
-                                else
-                                {
-                                    <span>Criar Conta</span>
-                                }
-                            </button>
-                        </div>
-                    </EditForm>
-
-                    <div class="text-center mt-4">
-                        <p class="mb-0">
-                            Já tem uma conta? 
-                            <a href="/login" class="text-decoration-none fw-bold">
-                                Faça login aqui
-                            </a>
-                        </p>
-                    </div>
-                </div>
+<div class="register-container">
+    <div class="register-card">
+        <div class="card-header">
+            <div class="logo-container">
+                <h1 class="title">Criar Conta</h1>
+                <p class="subtitle">Junte-se à nossa comunidade</p>
             </div>
         </div>
+
+        <div class="card-body">
+            <EditForm Model="@registerModel" OnValidSubmit="@HandleRegister">
+                <DataAnnotationsValidator />
+                
+                @if (!string.IsNullOrEmpty(message))
+                {
+                    <div class="alert @(isSuccess ? "alert-success" : "alert-error")">
+                        <div class="alert-icon">
+                            @if (isSuccess)
+                            {
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                            }
+                            else
+                            {
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg>
+                            }
+                        </div>
+                        <span>@message</span>
+                    </div>
+                }
+
+                <div class="form-group">
+                    <div class="input-container">
+                        <div class="input-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <InputText id="username" 
+                                 class="form-input" 
+                                 @bind-Value="registerModel.Username" 
+                                 placeholder="Nome de usuário" />
+                        <label for="username" class="form-label">Nome de Usuário</label>
+                    </div>
+                    <ValidationMessage For="@(() => registerModel.Username)" class="validation-message" />
+                </div>
+
+                <div class="form-group">
+                    <div class="input-container">
+                        <div class="input-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <InputText id="email" 
+                                 type="email" 
+                                 class="form-input" 
+                                 @bind-Value="registerModel.Email" 
+                                 placeholder="seu-email@exemplo.com" />
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <ValidationMessage For="@(() => registerModel.Email)" class="validation-message" />
+                </div>
+
+                <div class="form-group">
+                    <div class="input-container">
+                        <div class="input-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <InputText id="password" 
+                                 type="password" 
+                                 class="form-input" 
+                                 @bind-Value="registerModel.Password" 
+                                 placeholder="••••••••" />
+                        <label for="password" class="form-label">Senha</label>
+                    </div>
+                    <ValidationMessage For="@(() => registerModel.Password)" class="validation-message" />
+                    <div class="password-hint">Mínimo de 6 caracteres</div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-container">
+                        <div class="input-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <InputText id="confirmPassword" 
+                                 type="password" 
+                                 class="form-input" 
+                                 @bind-Value="registerModel.ConfirmPassword" 
+                                 placeholder="••••••••" />
+                        <label for="confirmPassword" class="form-label">Confirmar Senha</label>
+                    </div>
+                    <ValidationMessage For="@(() => registerModel.ConfirmPassword)" class="validation-message" />
+                </div>
+
+                <button type="submit" 
+                        class="submit-btn @(isLoading ? "loading" : "")" 
+                        disabled="@isLoading">
+                    @if (isLoading)
+                    {
+                        <div class="loading-spinner"></div>
+                        <span>Criando conta...</span>
+                    }
+                    else
+                    {
+                        <span>Criar Conta</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12,5 19,12 12,19"></polyline>
+                        </svg>
+                    }
+                </button>
+            </EditForm>
+
+            <div class="divider">
+                <span>ou</span>
+            </div>
+
+            <div class="login-link">
+                <p>Já possui uma conta?</p>
+                <a href="/login" class="link-btn">
+                    Fazer Login
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7,7 17,7 17,17"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-decoration">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+        <div class="decoration-circle circle-3"></div>
     </div>
 </div>
 
 <style>
-    .card {
-        border: none;
-        border-radius: 15px;
+    * {
+        box-sizing: border-box;
     }
-    
+
+    .register-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1rem;
+        background: #f8f9fa;
+        position: relative;
+    }
+
+    .register-card {
+        background: white;
+        border-radius: 24px;
+        box-shadow: 0 20px 40px rgba(170, 111, 115, 0.15);
+        width: 100%;
+        max-width: 480px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        animation: slideUp 0.6s ease-out;
+        border: 2px solid rgba(170, 111, 115, 0.1);
+    }
+
+    .card-header {
+        padding: 3rem 2rem 1rem;
+        text-align: center;
+        background: white;
+        border-bottom: 1px solid rgba(170, 111, 115, 0.1);
+    }
+
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo-icon {
+        width: 60px;
+        height: 60px;
+        background: #AA6F73;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-bottom: 1rem;
+        animation: pulse 2s infinite;
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #AA6F73;
+        margin: 0;
+    }
+
+    .subtitle {
+        color: #718096;
+        margin: 0;
+        font-size: 1rem;
+    }
+
     .card-body {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        border-radius: 15px;
+        padding: 2rem;
     }
-    
-    .form-control {
-        border-radius: 10px;
-        border: 1px solid #ddd;
-        padding: 12px 15px;
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .input-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .input-icon {
+        position: absolute;
+        left: 1rem;
+        color: #a0aec0;
+        z-index: 2;
+        transition: color 0.3s ease;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 1rem 1rem 1rem 3rem;
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        font-size: 1rem;
+        background: #ffffff;
         transition: all 0.3s ease;
+        outline: none;
     }
-    
-    .form-control:focus {
-        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-        border-color: #28a745;
+
+    .form-input:focus {
+        border-color: #AA6F73;
+        box-shadow: 0 0 0 3px rgba(170, 111, 115, 0.1);
+        transform: translateY(-1px);
     }
-    
-    .btn-success {
-        border-radius: 10px;
-        padding: 12px;
+
+    .form-input:focus + .form-label,
+    .form-input:not(:placeholder-shown) + .form-label {
+        transform: translateY(-2.5rem) scale(0.85);
+        color: #AA6F73;
         font-weight: 600;
+    }
+
+    .form-input:focus ~ .input-icon {
+        color: #AA6F73;
+    }
+
+    .form-label {
+        position: absolute;
+        left: 3rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #a0aec0;
+        font-size: 1rem;
         transition: all 0.3s ease;
+        pointer-events: none;
+        background: white;
+        padding: 0 0.5rem;
     }
-    
-    .btn-success:hover {
+
+    .validation-message {
+        color: #e53e3e;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        animation: shake 0.5s ease-in-out;
+    }
+
+    .password-hint {
+        color: #718096;
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+        padding-left: 3rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 1rem 2rem;
+        background: #AA6F73;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .submit-btn:hover:not(.loading) {
+        background: #965A5E;
         transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+        box-shadow: 0 10px 25px rgba(170, 111, 115, 0.3);
     }
-    
-    .spinner-border-sm {
-        width: 1rem;
-        height: 1rem;
+
+    .submit-btn:active {
+        transform: translateY(0);
+    }
+
+    .submit-btn.loading {
+        cursor: not-allowed;
+        opacity: 0.8;
+    }
+
+    .loading-spinner {
+        width: 20px;
+        height: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-top: 2px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+
+    .alert-success {
+        background: rgba(72, 187, 120, 0.1);
+        color: #2f855a;
+        border: 1px solid rgba(72, 187, 120, 0.2);
+    }
+
+    .alert-error {
+        background: rgba(245, 101, 101, 0.1);
+        color: #c53030;
+        border: 1px solid rgba(245, 101, 101, 0.2);
+    }
+
+    .alert-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .divider {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+        color: #a0aec0;
+        font-size: 0.875rem;
+    }
+
+    .divider::before,
+    .divider::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: #e2e8f0;
+    }
+
+    .divider span {
+        margin: 0 1rem;
+    }
+
+    .login-link {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .login-link p {
+        color: #718096;
+        margin: 0;
+        font-size: 0.875rem;
+    }
+
+    .link-btn {
+        color: #AA6F73;
+        text-decoration: none;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+    }
+
+    .link-btn:hover {
+        background: rgba(170, 111, 115, 0.1);
+        transform: translateY(-1px);
+    }
+        .title {
+            font-size: 1.75rem;
+        }
     }
 </style>
 
@@ -159,7 +457,7 @@
             {
                 isSuccess = true;
                 message = "Conta criada com sucesso! Redirecionando para o login...";
-                await Task.Delay(2000); //Pausa para mostrar a mensagem
+                await Task.Delay(2000);
                 Navigation.NavigateTo("/login");
             }
             else
