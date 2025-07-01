@@ -1,8 +1,7 @@
 @page "/"
 @using System.ComponentModel.DataAnnotations
-@using System.Text.Json
-@using System.Text
-@inject HttpClient Http
+@using ECommerce.Services
+@inject AuthService AuthService
 @inject NavigationManager Navigation
 
 <PageTitle>Login - ECommerce</PageTitle>
@@ -55,7 +54,7 @@
                                  type="text" 
                                  class="form-input" 
                                  @bind-Value="loginModel.Username" 
-                                 placeholder="seu-usuario" />
+                                 placeholder="usuario" />
                         <label for="username" class="form-label">Usuário</label>
                     </div>
                     <ValidationMessage For="@(() => loginModel.Username)" class="validation-message" />
@@ -104,10 +103,6 @@
                     else
                     {
                         <span>Entrar</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12,5 19,12 12,19"></polyline>
-                        </svg>
                     }
                 </button>
             </EditForm>
@@ -500,48 +495,19 @@
 
         try
         {
-            var loginRequest = new
-            {
-                Username = loginModel.Username,
-                Password = loginModel.Password
-            };
-
-            var json = JsonSerializer.Serialize(loginRequest);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var success = await AuthService.LoginAsync(loginModel.Username, loginModel.Password);
             
-            var response = await Http.PostAsync("http://localhost:5287/api/auth/login", content);
-            
-            if (response.IsSuccessStatusCode)
+            if (success)
             {
-                var responseContent = await response.Content.ReadAsStringAsync();
-                var result = JsonSerializer.Deserialize<LoginResponse>(responseContent, new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
-
-                if (result?.Success == true)
-                {
-                    isSuccess = true;
-                    message = "Login realizado com sucesso! Redirecionando...";
-                    await Task.Delay(1500);
-                    Navigation.NavigateTo("/home");
-                }
-                else
-                {
-                    isSuccess = false;
-                    message = result?.Message ?? "Erro no login";
-                }
+                isSuccess = true;
+                message = "Login realizado com sucesso! Redirecionando...";
+                await Task.Delay(1500);
+                Navigation.NavigateTo("/home");
             }
             else
             {
-                var errorContent = await response.Content.ReadAsStringAsync();
-                var errorResult = JsonSerializer.Deserialize<LoginResponse>(errorContent, new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
-                
                 isSuccess = false;
-                message = errorResult?.Message ?? "Usuário ou senha incorretos";
+                message = "Usuário ou senha incorretos";
             }
         }
         catch (Exception ex)
@@ -566,19 +532,5 @@
         public string Password { get; set; } = "";
 
         public bool RememberMe { get; set; } = false;
-    }
-
-    public class LoginResponse
-    {
-        public bool Success { get; set; }
-        public string Message { get; set; } = "";
-        public UserInfo? User { get; set; }
-    }
-
-    public class UserInfo
-    {
-        public int Id { get; set; }
-        public string Username { get; set; } = "";
-        public string Email { get; set; } = "";
     }
 }

@@ -1,12 +1,14 @@
 @using ECommerce.Services
 @inject CarrinhoService CarrinhoService
+@inject AuthService AuthService
+@inject NavigationManager Navigation
 
 <header class="flex justify-between items-center p-4 bg-cherry3 text-white rounded-2xl shadow-md">
   <h1 class="text-xl font-bold">Flores & Encantos</h1>
   <nav class="flex items-center space-x-4">
     <div class="flex items-center space-x-1">
       <img src="./Assets/home.png" class="w-5 h-5 filter invert inline-block" alt="Home" />
-      <a href="/" class="hover:underline">Home</a>
+      <a href="javascript:void(0)" @onclick="HandleHomeClick" class="hover:underline cursor-pointer">Home</a>
     </div>
     <div class="flex items-center space-x-1">
       <img src="./Assets/info.png" class="w-5 h-5 filter invert inline-block" alt="Sobre" />
@@ -25,6 +27,14 @@
         </span>
       }
     </div>
+    
+    @* Shows login/logout based on authentication status *@
+    @if (AuthService.IsAuthenticated)
+    {
+      <div class="flex items-center space-x-2">
+        <button @onclick="HandleLogout" class="text-sm hover:underline cursor-pointer bg-transparent border-none text-white">Sair</button>
+      </div>
+    }
   </nav>
 </header>
 
@@ -33,10 +43,32 @@
   {
     //Atualiza esse componente sempre que o carrinho mudar
     CarrinhoService.OnChange += StateHasChanged;
+    
+    //Atualiza esse componente sempre que o estado de autenticação mudar
+    AuthService.OnAuthStateChanged += StateHasChanged;
+  }
+
+  private void HandleHomeClick()
+  {
+    if (AuthService.IsAuthenticated)
+    {
+      Navigation.NavigateTo("/home");
+    }
+    else
+    {
+      Navigation.NavigateTo("/");
+    }
+  }
+
+  private async Task HandleLogout()
+  {
+    await AuthService.LogoutAsync();
+    Navigation.NavigateTo("/");
   }
 
   public void Dispose()
   {
     CarrinhoService.OnChange -= StateHasChanged;
+    AuthService.OnAuthStateChanged -= StateHasChanged;
   }
 }
